@@ -4,8 +4,9 @@ import Navbar from "./components/Navbar";
 const HomeLayout = ()=>{
     return <>
         <Navbar/>
-        {/* <Link to='/about'>about page</Link> */}
+     <section className="page">
         <Outlet />
+     </section>
     </>
 }
 

@@ -35,7 +35,7 @@ const NavStyles = styled.nav`
   .nav-link:hover{
     color: var(--primary-500);
   }
-
+  
   @media (min-width: 786px) {
     .nav-center{
         flex-direction: row;

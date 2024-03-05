@@ -2,6 +2,9 @@ import { Link,useRouteError } from "react-router-dom";
 
 const Error = ()=>{
 const error = useRouteError();
+console.log(error.status);
+
+if(error.status == 404){
 const [first,second,third] = [...error.status.toString()];
 
 console.log(first);
@@ -16,6 +19,9 @@ console.log(first);
       <button type="button" name="button"><Link to="/">home</Link></button>
     </div>
   </div>
+}
+
+return "something went wrongS"
 }
 
 export default Error;

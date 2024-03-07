@@ -1,7 +1,11 @@
+import { useRouteError } from "react-router";
+
 const SinglePageError =()=>{
+    const err = useRouteError();
+    console.log(err)
     return <div>
   
-    <p class='sub-text'>Oh eyeballs! Something went wrong. We're <i>looking</i> to see what happened.</p>
+    <p className='sub-text'>{err.message}</p>
     
   </div>
 }
